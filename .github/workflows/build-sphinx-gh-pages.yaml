@@ -20,10 +20,9 @@ jobs:
       uses: sphinx-notes/pages@master
       with:
         documentation_path: docs/source
-        target_branch: main
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
               github_token: ${{ secrets.SPHINX_GH_TOKEN }}
-              branch: main
+              branch: gh-pages
 
